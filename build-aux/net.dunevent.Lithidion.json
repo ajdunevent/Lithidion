@@ -1,0 +1,66 @@
+{
+    "id": "net.dunevent.Lithidion",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "51",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
+    "command": "lithidion",
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--device=dri",
+        "--system-talk-name=org.bluez",
+        "--system-talk-name=org.freedesktop.ModemManager1",
+        "--system-talk-name=org.freedesktop.timedate1",
+        "--system-talk-name=org.freedesktop.hostname1",
+        "--socket=session-bus",
+        "--socket=pulseaudio"
+    ],
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "env": {
+            "CARGO_HOME": "/run/build/lithidion/cargo",
+            "CARGO_NET_OFFLINE": "true"
+        },
+        "arch": {
+            "aarch64": {
+                "env": {
+                    "TRANSCRIBE_CMAKE_ARGS": "-DGGML_NATIVE=OFF -DGGML_CPU_ARM_ARCH=armv8.2-a+dotprod+fp16"
+                }
+            },
+            "x86_64": {
+                "env": {
+                    "TRANSCRIBE_CMAKE_ARGS": "-DGGML_NATIVE=OFF -DGGML_SSE42=ON -DGGML_AVX=ON -DGGML_AVX2=ON -DGGML_BMI2=ON -DGGML_FMA=ON -DGGML_F16C=ON"
+                }
+            }
+        }
+    },
+    "modules": [
+        {
+            "name": "lithidion",
+            "buildsystem": "simple",
+            "build-commands": [
+                "cargo --offline build --release -p lithidion -p lithidion-service",
+                "install -Dm755 target/release/lithidion /app/bin/lithidion",
+                "install -Dm755 target/release/lithidion-service /app/bin/lithidion-service",
+                "install -Dm644 data/net.dunevent.Lithidion.Service.service /app/share/dbus-1/services/net.dunevent.Lithidion.Service.service",
+                "install -Dm644 data/net.dunevent.Lithidion.desktop /app/share/applications/net.dunevent.Lithidion.desktop",
+                "install -Dm644 data/net.dunevent.Lithidion.metainfo.xml /app/share/metainfo/net.dunevent.Lithidion.metainfo.xml",
+                "install -Dm644 data/icons/hicolor/scalable/apps/net.dunevent.Lithidion.svg /app/share/icons/hicolor/scalable/apps/net.dunevent.Lithidion.svg",
+                "install -Dm644 data/icons/hicolor/symbolic/apps/net.dunevent.Lithidion-symbolic.svg /app/share/icons/hicolor/symbolic/apps/net.dunevent.Lithidion-symbolic.svg"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "..",
+                    "skip": [".git", "target", ".flatpak", ".flatpak-builder", "dist"]
+                },
+                "cargo-sources.json"
+            ]
+        }
+    ]
+}

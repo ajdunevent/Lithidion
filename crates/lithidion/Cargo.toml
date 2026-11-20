@@ -1,0 +1,50 @@
+[package]
+name = "lithidion"
+description = "Pebble smartwatch companion for mobile Linux"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+lithidion-core = { path = "../lithidion-core" }
+adw = { version = "0.9", package = "libadwaita", features = ["v1_5"] }
+anyhow = "1.0.104"
+ashpd = { version = "0.13", default-features = false, features = ["async-io", "background", "location", "settings"] }
+async-channel = "2.5.0"
+bluer = { version = "0.17.4", features = ["bluetoothd"] }
+chrono = "0.4.45"
+futures = "0.3.34"
+gio = "0.22"
+glib = "0.22"
+gtk = { version = "0.11", package = "gtk4", features = ["v4_12"] }
+chrono-tz = "0.10.4"
+iana-time-zone = "0.1.65"
+icalendar = { version = "0.17", default-features = false, features = ["parser", "chrono-tz", "recurrence"] }
+pebble-protocol = { path = "../pebble-protocol" }
+pulseaudio = "0.3"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json", "stream"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.40.2", features = ["bundled"] }
+tokio = { version = "1.54.0", features = ["rt-multi-thread", "macros", "sync", "time", "fs", "io-util"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+uuid = { version = "1", features = ["v4", "v5"] }
+zbus = { version = "5", default-features = false, features = ["async-io"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+webkit6 = "0.6"
+javascriptcore6 = "0.6"
+md-5 = "0.10"
+base64 = "0.22"
+tokio-tungstenite = { version = "0.30.0", default-features = false, features = ["connect", "rustls-tls-webpki-roots"] }
+url = "2"
+transcribe-cpp = { version = "0.4", default-features = false }
+oxideav-speex = "0.0.12"
+sha2 = "0.10"
+
+[build-dependencies]
+glib-build-tools = "0.22"
+
+[dev-dependencies]
+lithidion-core = { path = "../lithidion-core", features = ["test-support"] }

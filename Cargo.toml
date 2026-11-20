@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/pebble-protocol", "crates/lithidion-core", "crates/lithidion-service", "crates/lithidion", "tools/voiceprobe"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["AJ <aj@dunevent.net>"]
+
+[profile.release]
+lto = true
+
+# Optimised like release, but without LTO and with incremental builds, so a rebuild relinks quickly.
+[profile.release-dev]
+inherits = "release"
+lto = false
+incremental = true

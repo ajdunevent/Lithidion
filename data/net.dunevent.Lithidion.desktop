@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Lithidion
+Comment=Companion for Pebble watches
+Exec=lithidion
+Icon=net.dunevent.Lithidion
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=Pebble;smartwatch;watch;Bluetooth;
+StartupNotify=true
+X-Purism-FormFactor=Workstation;Mobile;

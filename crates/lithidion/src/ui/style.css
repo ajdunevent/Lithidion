@@ -1,0 +1,16 @@
+.status-dot { font-size: 9px; color: alpha(currentColor, 0.35); }
+.status-dot.connected { color: @success_color; }
+.status-dot.connecting { color: @warning_color; }
+.watch-title { padding-top: 2px; padding-bottom: 2px; }
+.add-watch-icon {
+  min-width: 88px;
+  min-height: 88px;
+  border-radius: 9999px;
+  background-color: alpha(@accent_bg_color, 0.14);
+  color: @accent_color;
+}
+.app-thumb { border-radius: 8px; background-color: alpha(currentColor, 0.06); }
+.screenshot { border-radius: 10px; }
+.fade-start { background-image: linear-gradient(to right, @window_bg_color, alpha(@window_bg_color, 0.25)); }
+.fade-end { background-image: linear-gradient(to left, @window_bg_color, alpha(@window_bg_color, 0.25)); }
+.shot-placeholder { background-color: alpha(currentColor, 0.08); }

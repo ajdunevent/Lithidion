@@ -1,0 +1,12 @@
+[package]
+name = "pebble-protocol"
+description = "Pebble Protocol and PPoGATT framing, message encoding and decoding, without I/O"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = "1"

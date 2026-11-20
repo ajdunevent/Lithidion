@@ -1,0 +1,5 @@
+# Build output
+/target/
+/.flatpak/
+/.flatpak-builder/
+/dist/

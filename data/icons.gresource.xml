@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/net/dunevent/Lithidion/icons/scalable/actions">
+    <file preprocess="xml-stripblanks" alias="lithidion-watch-symbolic.svg">icons/lithidion-watch-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-health-symbolic.svg">icons/lithidion-health-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-notifications-symbolic.svg">icons/lithidion-notifications-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-bluetooth-symbolic.svg">icons/lithidion-bluetooth-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-battery-symbolic.svg">icons/lithidion-battery-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-info-symbolic.svg">icons/lithidion-info-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-walk-symbolic.svg">icons/lithidion-walk-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-run-symbolic.svg">icons/lithidion-run-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-workout-symbolic.svg">icons/lithidion-workout-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-edit-symbolic.svg">icons/lithidion-edit-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-check-symbolic.svg">icons/lithidion-check-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-menu-symbolic.svg">icons/lithidion-menu-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-pan-down-symbolic.svg">icons/lithidion-pan-down-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-go-next-symbolic.svg">icons/lithidion-go-next-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-go-previous-symbolic.svg">icons/lithidion-go-previous-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-add-symbolic.svg">icons/lithidion-add-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-trash-symbolic.svg">icons/lithidion-trash-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-more-symbolic.svg">icons/lithidion-more-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-grid-symbolic.svg">icons/lithidion-grid-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="arrow-counterclockwise-symbolic.svg">icons/arrow-counterclockwise-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-image-missing-symbolic.svg">icons/lithidion-image-missing-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-settings-symbolic.svg">icons/lithidion-settings-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-go-up-symbolic.svg">icons/lithidion-go-up-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="lithidion-go-down-symbolic.svg">icons/lithidion-go-down-symbolic.svg</file>
+  </gresource>
+  <!-- The app icon, for running without installing. -->
+  <gresource prefix="/net/dunevent/Lithidion/icons/scalable/apps">
+    <file preprocess="xml-stripblanks" alias="net.dunevent.Lithidion.svg">icons/hicolor/scalable/apps/net.dunevent.Lithidion.svg</file>
+    <file preprocess="xml-stripblanks" alias="net.dunevent.Lithidion-symbolic.svg">icons/hicolor/symbolic/apps/net.dunevent.Lithidion-symbolic.svg</file>
+  </gresource>
+</gresources>

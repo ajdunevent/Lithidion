@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>net.dunevent.Lithidion</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Lithidion</name>
+  <summary>Companion for Pebble watches</summary>
+  <description>
+    <p>
+      Lithidion connects your Pebble watch to your Linux phone, tablet, or computer over Bluetooth, with
+      no account and no cloud.
+    </p>
+    <ul>
+      <li>Pairs with Pebble watches</li>
+      <li>Keeps the watch connected in the background and sets its clock</li>
+      <li>More than one watch, each with its own settings, switched with a tap</li>
+      <li>Installs and updates PebbleOS</li>
+      <li>Watchfaces and apps from the Pebble and Rebble app stores</li>
+      <li>Notifications and calls on the watch</li>
+      <li>Calendar events, weather, and music controls</li>
+      <li>Steps, sleep, and heart rate, kept on the device</li>
+      <li>Dictation for watch apps, transcribed on the device</li>
+      <li>Advanced tools for the connection, restarts, and recovery firmware</li>
+    </ul>
+    <p>Not affiliated with Core Devices or Pebble.</p>
+  </description>
+  <content_rating type="oars-1.1"/>
+  <launchable type="desktop-id">net.dunevent.Lithidion.desktop</launchable>
+  <developer id="net.dunevent">
+    <name>Lithidion contributors</name>
+  </developer>
+  <update_contact>aj@dunevent.net</update_contact>
+  <url type="homepage">https://dev.dunevent.net/aj/Lithidion</url>
+  <url type="bugtracker">https://dev.dunevent.net/aj/Lithidion/issues</url>
+  <url type="vcs-browser">https://dev.dunevent.net/aj/Lithidion</url>
+  <url type="donation">https://dunevent.net/donate</url>
+  <recommends>
+    <display_length compare="ge">360</display_length>
+  </recommends>
+  <supports>
+    <control>pointing</control>
+    <control>touch</control>
+  </supports>
+  <releases>
+    <release version="0.1.0" date="2026-11-15">
+      <description>
+        <p>First release of the rewrite.</p>
+        <ul>
+          <li>Adds and pairs Pebble watches, and switches between them</li>
+          <li>Connects over both kinds of Pebble Bluetooth connection, and reconnects on its own</li>
+          <li>Keeps the watch connected from a small background service while the window is closed</li>
+          <li>Sets the watch's clock and time zone, and keeps them in step</li>
+          <li>Shows the watch's battery, firmware, and details</li>
+          <li>Installs PebbleOS on a new watch and offers updates</li>
+          <li>Watchfaces and apps from the Pebble and Rebble app stores</li>
+          <li>Notifications with Dismiss and Mute, and calls with the caller's name</li>
+          <li>Notifications missed while the watch was away, sent when it reconnects</li>
+          <li>Pictures in notifications, on watches that show them</li>
+          <li>Calendar events on the timeline, weather, and music controls</li>
+          <li>Health: steps, sleep, heart rate, activities, and the wearer's profile, by week, month, or year, and each day hour by hour</li>
+          <li>Dictation, transcribed on the device</li>
+          <li>Advanced: connection details, ping, restart, recovery firmware, and saving the watch's log and core dump</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
