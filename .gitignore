@@ -3,3 +3,8 @@
 /.flatpak/
 /.flatpak-builder/
 /dist/
+
+# Left behind by testing
+/app-downloads/
+/firmware-downloads/
+core.dump

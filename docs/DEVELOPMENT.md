@@ -33,6 +33,9 @@ snapshot's. The build changes whenever `lithidion-core` or `pebble-protocol` doe
 another build quits the service and starts its own. Closing the window leaves the service running
 unless Run in Background is off; Quit stops both.
 
+Under Flatpak the service sets its status in the Background portal (version 2 and later) from the
+connection and firmware updates, for the desktop's list of background apps.
+
 ## Flatpak
 
 `build-aux/dev.sh` asks for the architecture (this machine, the other one of x86_64 and aarch64,

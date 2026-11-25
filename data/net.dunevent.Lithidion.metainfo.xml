@@ -42,6 +42,14 @@
     <control>touch</control>
   </supports>
   <releases>
+    <release version="0.1.1" date="2026-11-25">
+      <description>
+        <p>Lithidion now says what it is doing in the list of apps running in the background.</p>
+        <ul>
+          <li>Shows whether the watch is connected, connecting, or reconnecting, and when its firmware is being updated</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.0" date="2026-11-15">
       <description>
         <p>First release of the rewrite.</p>
